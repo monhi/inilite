@@ -1,4 +1,4 @@
-This is a lite implementation of ini configuration windows file for Linux OS.
+This is a lite implementation of ini configuration files for Linux OS.
 It uses C++ 11 features. 
 following templates are used:
 1. std::map
