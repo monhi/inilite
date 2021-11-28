@@ -8,8 +8,8 @@ following templates are used:
 
 it is the first time that I use std::set in a project. 
 
-Just, setKey and getkeyvalue function are implemented to handle string values. 
-Other types can be converted to string and saved inside ini files. 
+Just, setKey and getkeyvalue functions are implemented to handle string values. 
+Other types can be converted to string and saved inside ini file. 
 
 
 
