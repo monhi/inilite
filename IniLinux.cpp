@@ -7,7 +7,7 @@ std::string CIniLinux::deblank(const char* input)
 {
 	std::string stemp;
 	bool seen = false;
-	int i, j;
+	unsigned int i, j;
 	char output[LINE_LENGTH];
 	memset(output, 0, LINE_LENGTH);
 	for (i = 0, j = 0; i<strlen(input); i++)
@@ -98,7 +98,7 @@ void CIniLinux::ProcessSection(char *buffer)
 	char sectionName[LINE_LENGTH];
 	memset(sectionName, 0, LINE_LENGTH);
 	bool seen = false;
-	for (int i = 0; i < strlen(buffer); i++)
+	for (unsigned int i = 0; i < strlen(buffer); i++)
 	{
 		if (buffer[i] == '[')
 		{
