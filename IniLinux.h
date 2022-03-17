@@ -21,7 +21,7 @@ public:
 	long								setKey(std::string strValue, std::string strKey, std::string strSection);
 private:
 	std::set<std::string>				m_set;
-	std::string							deblank(const char* input);
+	std::string							trim(const char* input);
 	std::string							m_strFileName;
 	std::string							m_currentSection;
 	std::map<std::string, std::string>  m_content;
