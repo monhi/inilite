@@ -3,7 +3,7 @@
 #include <set>
 #include <string.h>
 
-std::string CIniLinux::deblank(const char* input)
+std::string CIniLinux::trim(const char* input)
 {
 	std::string stemp;
 	bool seen = false;
@@ -57,7 +57,7 @@ void CIniLinux::setINIFileName(std::string strINIFile)
 			fgets(buffer, LINE_LENGTH, f);
 			if (strlen(buffer) > 0)
 			{
-				std::string stemp = deblank(buffer); // remove space characters from the beginning and end of buffer, but keep other space characters
+				std::string stemp = trim(buffer); // remove space characters from the beginning and end of buffer, but keep other space characters
 				if (buffer[0] == '[')
 				{
 					ProcessSection((char*)stemp.c_str());
@@ -137,7 +137,7 @@ std::string CIniLinux::getKeyValue(std::string strKey, std::string strSection)
 // Used to add or set a key value pair to a section
 long CIniLinux::setKey(std::string strValue, std::string strKey, std::string strSection)
 {
-	std::string stemp = deblank(strSection.c_str()) + "+" + deblank(strKey.c_str());
+	std::string stemp = trim(strSection.c_str()) + "+" + trim(strKey.c_str());
 	m_content[stemp] = strValue;
 	m_set.insert(strSection);
 	Save();
