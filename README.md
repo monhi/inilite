@@ -8,8 +8,12 @@ following templates are used:
 
 it is the first time that I use std::set in a project. 
 
-Just, setKey and getkeyvalue functions are implemented to handle string values. 
+Just, setKey and getkey functions are implemented to handle string values. 
 Other types can be converted to string and saved inside ini file. 
+
+Notes:
+- each line can have maximum or 512 characters.
+- lines are sorted lexicographically before saving.
 
 
 
