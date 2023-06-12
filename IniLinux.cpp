@@ -124,7 +124,7 @@ void CIniLinux::ProcessSection(char *buffer)
 	}
 }
 
-std::string CIniLinux::getKeyValue(std::string strKey, std::string strSection)
+std::string CIniLinux::getKey(std::string strKey, std::string strSection)
 {
 	std::string stemp = strSection + "+" + strKey;
 	if (m_content.find(stemp) != m_content.end())
