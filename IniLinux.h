@@ -17,7 +17,7 @@ public:
 										CIniLinux();
 										~CIniLinux();
 	void								setINIFileName(std::string strINIFile);
-	std::string							getKeyValue(std::string strKey, std::string strSection);
+	std::string							getKey(std::string strKey, std::string strSection);
 	long								setKey(std::string strValue, std::string strKey, std::string strSection);
 private:
 	std::set<std::string>				m_set;
