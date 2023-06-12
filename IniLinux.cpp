@@ -55,9 +55,9 @@ void CIniLinux::setINIFileName(std::string strINIFile)
 		{
 			memset(buffer, 0, LINE_LENGTH);
 			fgets(buffer, LINE_LENGTH, f);
+			std::string stemp = trim(buffer); // remove space characters from the beginning and end of buffer, but keep other space characters
 			if (strlen(buffer) > 0)
 			{
-				std::string stemp = trim(buffer); // remove space characters from the beginning and end of buffer, but keep other space characters
 				if (buffer[0] == '[')
 				{
 					ProcessSection((char*)stemp.c_str());
