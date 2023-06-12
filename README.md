@@ -12,7 +12,7 @@ Just, setKey and getkey functions are implemented to handle string values.
 Other types can be converted to string and saved inside ini file. 
 
 Notes:
-- each line can have maximum or 512 characters. you can change it in `iniLinux.h` header file.
+- each line can have maximum or 512 characters. you can change it in `IniLinux.h` header file.
 - lines are sorted alphabetically before saving.
 
 
