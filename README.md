@@ -1,19 +1,22 @@
-This is a lite implementation of ini configuration files for Linux OS.
+# INI Lite
+This is a lite implementation of INI configuration files for Linux OS.
 It uses C++ 11 features. 
-following templates are used:
+The following templates are used:
 1. std::map
 2. std::string
 3. std::mutex
 4. std::set 
 
-it is the first time that I use std::set in a project. 
+It is the first time that I have used std::set in a project. 
 
 Just, setKey and getkey functions are implemented to handle string values. 
-Other types can be converted to string and saved inside ini file. 
+Other types can be converted to a string and saved inside INI file. 
 
 Notes:
-- each line can have maximum or 512 characters. you can change it in `IniLinux.h` header file.
-- lines are sorted alphabetically before saving.
+- Each line can have a maximum of 512 characters. But you can change it in the `IniLinux.h` header file.
+- Lines are sorted alphabetically before saving.
+- Comment lines are deleted automatically. do not save any comment.
+
 
 
 
